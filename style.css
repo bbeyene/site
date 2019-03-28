@@ -1,0 +1,143 @@
+
+pre code {
+	display: block;
+	font-family: monaco, consolas, monospace;
+	font-size: 15px;
+	background-color: cornsilk;
+	padding: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+body {
+	background-color: Sand;
+	font-size: 17px;
+	color: darkslategray;
+	font-family: helvetica, sans-serif;
+}
+
+iframe {
+
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+/*class*/
+.alert {
+	color: red;
+}
+
+.output {
+	background-color: green;
+	color: white;
+}
+
+table, th, td {
+
+}
+/*id*/
+#number {
+	width: 5em;
+}
+
+fieldset {
+	font-family: verdana;
+	background-color: white;
+	padding: 10px;
+	border: 2px double teal;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+}
+
+legend {
+	margin-bottom: 25px;
+	margin-left: 0px;
+}
+/*
+input[type=submit] {
+	background: green;
+	color: gold;
+	border-style: 1px solid;
+	border-color: teal;
+	height: 25px;
+	width: 80px;
+	text-shadow: none;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	background: darkgreen;
+}
+*/
+a:link, a:visited {
+		background-color: Ivory;
+		padding: 1px 10px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-family: consolas, sans-serif;
+		color: slategray;
+		border-radius: 10px;
+	}
+
+a:hover, a:active {
+	background-color: linen;
+}
+
+.container {
+	display: inline;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+.container input {
+	position: absolute;
+	opacity: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background-color: lightsteelblue;
+	border-radius: 40%;
+}
+
+.container:hover input ~ .checkmark {
+	background-color: green;
+}
+
+.container input:checked ~ .checkmark {
+	background-color: forestgreen;
+}
+
+.checkmark:after {
+	content:"";
+	position: absolute;
+	display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+
+.container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
